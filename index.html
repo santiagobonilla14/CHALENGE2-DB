@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Conversor de Divisas</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Divisas</h1>
+    <div class="input-container">
+      <label for="amount">Cantidad:</label>
+      <input type="number" id="amount" step="0.01">
+    </div>
+    <div class="input-container">
+      <label for="from">De:</label>
+      <select id="from">
+        <option value="myCurrency">Mi Moneda</option>
+        <option value="dollar">Dólar</option>
+        <option value="euro">Euro</option>
+        <option value="gbp">Libras Esterlinas</option>
+        <option value="yen">Yen Japonés</option>
+        <option value="won">Won Sul-coreano</option>
+      </select>
+    </div>
+    <div class="input-container">
+      <label for="to">A:</label>
+      <select id="to">
+        <option value="myCurrency">Mi Moneda</option>
+        <option value="dollar">Dólar</option>
+        <option value="euro">Euro</option>
+        <option value="gbp">Libras Esterlinas</option>
+        <option value="yen">Yen Japonés</option>
+        <option value="won">Won Sul-coreano</option>
+      </select>
+    </div>
+    <button id="convertButton">Convertir</button>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
